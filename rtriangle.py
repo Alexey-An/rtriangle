@@ -26,22 +26,22 @@ class RtriangleProvider(RTriangle):
             return b
 
         def getApexX1():
-            X1 = random.randint(0, 100)
+            X1 = random.randint(0, 10)
             return X1
         def getApexX2():
-            X2 = random.randint(0, 100)
+            X2 = random.randint(0, 10)
             return X2
         def getApexX3():
-            X3 = random.randint(0, 100)
+            X3 = random.randint(0, 10)
             return X3
         def getApexY1():
-            Y1 = random.randint(0, 100)
+            Y1 = random.randint(0, 10)
             return Y1
         def getApexY2():
-            Y2 = random.randint(0, 100)
+            Y2 = random.randint(0, 10)
             return Y2
         def getApexY3():
-            Y3 = random.randint(0, 100)
+            Y3 = random.randint(0, 10)
             return Y3
 
         while True:
@@ -62,7 +62,7 @@ class RtriangleProvider(RTriangle):
             print(X1, X2, X3, Y1, Y2, Y3)
             print(dotP1, dotP2, dotP3)
 
-            if not dotP1 != 0 and dotP2 != 0 and dotP3 != 0:
+            if not (dotP1 != 0 and dotP2 != 0 and dotP3 != 0):
                 break
         return X1, X2, X3, Y1, Y2, Y3
 
