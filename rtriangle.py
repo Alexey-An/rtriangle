@@ -20,11 +20,6 @@ class RtriangleProvider(RTriangle):
 
     def getRtriangle(self):
 
-        def getMax(a, b):
-            if a > b:
-                return a
-            return b
-
         def getApexX1():
             X1 = random.randint(0, 10)
             return X1
